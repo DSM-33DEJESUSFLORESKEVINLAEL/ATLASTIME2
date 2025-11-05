@@ -1,17 +1,47 @@
-# atlastime
+# 🕒 AtlasTime
 
-A new Flutter project.
+**AtlasTime** es una aplicación multiplataforma desarrollada en **Flutter** que permite registrar la asistencia de empleados mediante **geolocalización**, validación de dispositivos y sincronización en línea/offline.  
+Incluye un panel web complementario desarrollado en **Vue.js** para supervisores y administradores.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Características principales
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ Registro de **entradas y salidas** con validación de zona geográfica.  
+- 🌐 Funciona **sin conexión** (sincroniza cuando hay Wi-Fi disponible).  
+- 📱 Validación de **dispositivo autorizado** mediante número de serie.  
+- 🕓 Detección automática de cambio de día para evitar duplicados.  
+- 💾 Almacenamiento local con **SharedPreferences** y base de datos SQLite.  
+- 📤 Sincronización automática con el servidor vía API REST.  
+- 🧭 Onboarding interactivo para nuevos usuarios.  
+- 👩‍💼 Roles: **Empleado, Supervisor y Administrador**.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# ATLASTIME2" 
+## 🧩 Tecnologías utilizadas
+
+### Aplicación móvil
+- Flutter 3.x
+- Dart
+- SharedPreferences
+- Geolocator
+- Connectivity Plus
+- Onboarding Overlay
+
+### Panel web
+- Vue.js 3
+- Axios
+- ExcelJS / FileSaver (para exportaciones)
+- TailwindCSS
+
+---
+
+## ⚙️ Configuración del proyecto
+
+Clona el repositorio y ejecuta los siguientes comandos:
+
+```bash
+git clone https://github.com/DSM-33DEJESUSFLORESKEVINLAEL/ATLASTIME2.git
+cd ATLASTIME2
+flutter pub get
+flutter run
